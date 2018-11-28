@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/function_select"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:stretchColumns="0">
+
+
+        <TableLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:stretchColumns="0">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OffsetTemp" />
+
+                <EditText
+                    android:id="@+id/offsetTemperature"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:text="460" />
+
+                <Button
+                    android:id="@+id/setOffsetTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OffsetDis" />
+
+                <EditText
+                    android:id="@+id/offsetDistance"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:text="30" />
+
+                <Button
+                    android:id="@+id/setoffsetDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VerticalFov" />
+
+                <EditText
+                    android:id="@+id/et_VerticalFov"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:text="53" />
+
+                <Button
+                    android:id="@+id/btn_setVerticalFov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HorizontalFov" />
+
+                <EditText
+                    android:id="@+id/et_HorizontalFov"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:text="73" />
+
+                <Button
+                    android:id="@+id/btn_setHorizontalFov"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:stretchColumns="0">
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calibration" />
+
+                <Switch
+                    android:id="@+id/switch_calibration"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_setCalibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="SET" />
+
+            </TableRow>
+        </TableLayout>
+
+    </TableLayout>
+</FrameLayout>
+

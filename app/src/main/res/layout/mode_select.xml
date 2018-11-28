@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DA000000"
+    android:id="@+id/mode_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <Button
+     android:id="@+id/btn_depth"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:layout_gravity="right"
+     android:layout_marginEnd="60dp"
+     android:layout_marginTop="180dp"
+     android:background="@drawable/ripple_circle_bg"
+     android:text="Depth View"
+     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+     android:textSize="14sp" />
+
+ <Button
+     android:id="@+id/btn_3d"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:layout_gravity="right"
+     android:layout_marginEnd="60dp"
+     android:layout_marginTop="360dp"
+     android:background="@drawable/ripple_circle_bg"
+     android:text="3D View"
+     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+     android:textSize="14sp" />
+
+ <Button
+     android:id="@+id/btn_ir"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:layout_marginStart="60dp"
+     android:layout_marginTop="180dp"
+     android:layout_gravity="left"
+     android:background="@drawable/ripple_circle_bg"
+     android:text="IR View"
+     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+     android:textSize="14sp" />
+
+ <Button
+     android:id="@+id/btn_raw"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:layout_gravity="left"
+     android:layout_marginTop="360dp"
+     android:layout_marginStart="60dp"
+     android:background="@drawable/ripple_circle_bg"
+     android:text="RAW View"
+     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+     android:textSize="14sp" />
+</FrameLayout>
